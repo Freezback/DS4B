@@ -29,7 +29,7 @@ def converter(inputed_string, option):
 def main():
     '''Initialize parser, adding 2 arguments inside of parser, parse the arguments and call function converter '''
     parser = argparse.ArgumentParser(description="Convert entered string to reverse, upper or both")   
-    parser.add_argument('-t', '--text', type=str,  help='Enter the text you wish to convert')
+    parser.add_argument('-t', '--text', type=str, required = True,  help='Enter the text you wish to convert')
     parser.add_argument('-o','--option', type=str.upper, help='(Optional) Enter reverse (A) or capitalize (B), default both (C)) ', default = "C")
     args = parser.parse_args()
     print("Input:" + args.text)
