@@ -3,9 +3,7 @@
 Created on Sat Feb 22 22:20:59 2020
 
 @author: DELL
-"""
-
-   
+"""  
 import argparse
 
 def converter(inputed_string, option):
